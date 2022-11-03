@@ -1,0 +1,189 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="20037" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="20020"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--SetVC-->
+        <scene sceneID="aca-c0-gH4">
+            <objects>
+                <viewController storyboardIdentifier="SetVC" id="gqx-rg-3mb" customClass="SetVC" customModule="UINavigationController_2022_09_19" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="5ee-ko-90I">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="t22-Ey-TXe">
+                                <rect key="frame" x="57" y="428" width="300" height="50"/>
+                                <color key="backgroundColor" systemColor="labelColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="Cbq-cG-J0v"/>
+                                    <constraint firstAttribute="width" constant="300" id="vML-m5-IX2"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
+                                <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                <state key="normal" title="Append VC2 TO VC4 ">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <connections>
+                                    <action selector="btnAppendVC2ToVC4Click:" destination="gqx-rg-3mb" eventType="touchUpInside" id="Chv-X0-abi"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="VC1" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ZMO-SX-vrn">
+                                <rect key="frame" x="191" y="821" width="32" height="21"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="SsE-UG-Ymc"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="t22-Ey-TXe" firstAttribute="centerX" secondItem="SsE-UG-Ymc" secondAttribute="centerX" id="4tu-Sq-TJ3"/>
+                            <constraint firstItem="t22-Ey-TXe" firstAttribute="centerY" secondItem="SsE-UG-Ymc" secondAttribute="centerY" id="aEO-IK-QLd"/>
+                            <constraint firstItem="ZMO-SX-vrn" firstAttribute="centerX" secondItem="SsE-UG-Ymc" secondAttribute="centerX" id="fSS-yR-R29"/>
+                            <constraint firstItem="SsE-UG-Ymc" firstAttribute="bottom" secondItem="ZMO-SX-vrn" secondAttribute="bottom" constant="20" id="iq1-va-8IZ"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="ZHv-jU-IY2"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="qXl-Jk-5av" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1797" y="138"/>
+        </scene>
+        <!--SetVC2-->
+        <scene sceneID="xhv-yj-bjB">
+            <objects>
+                <viewController storyboardIdentifier="SetVC2" id="9Dv-Aa-tGK" customClass="SetVC2" customModule="UINavigationController_2022_09_19" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="nmP-gU-Mpm">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="VC2" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="N0w-Vm-y1y">
+                                <rect key="frame" x="189.5" y="821" width="35" height="21"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="gwW-2X-KJV"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="gwW-2X-KJV" firstAttribute="bottom" secondItem="N0w-Vm-y1y" secondAttribute="bottom" constant="20" id="3ML-p7-H79"/>
+                            <constraint firstItem="N0w-Vm-y1y" firstAttribute="centerX" secondItem="gwW-2X-KJV" secondAttribute="centerX" id="k8R-ox-p2Q"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="PrE-wc-gHS"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="PIw-bv-dwc" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2542" y="138"/>
+        </scene>
+        <!--SetVC3-->
+        <scene sceneID="ewY-gE-fIS">
+            <objects>
+                <viewController storyboardIdentifier="SetVC3" id="9aP-3W-JRB" customClass="SetVC3" customModule="UINavigationController_2022_09_19" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="QCu-UO-Vl7">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="VC3" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fa2-wM-Yrp">
+                                <rect key="frame" x="189.5" y="821" width="35" height="21"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="i3X-4n-1mS"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="i3X-4n-1mS" firstAttribute="bottom" secondItem="fa2-wM-Yrp" secondAttribute="bottom" constant="20" id="m1i-vt-Mxe"/>
+                            <constraint firstItem="fa2-wM-Yrp" firstAttribute="centerX" secondItem="i3X-4n-1mS" secondAttribute="centerX" id="miO-e3-h3D"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="KGR-EF-rBG"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="JJE-xU-nZH" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3296" y="138"/>
+        </scene>
+        <!--SetVC4-->
+        <scene sceneID="RAC-Np-1kl">
+            <objects>
+                <viewController storyboardIdentifier="SetVC4" id="idI-fC-3kr" customClass="SetVC4" customModule="UINavigationController_2022_09_19" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="abX-Y1-wQy">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="VC4" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="UVs-Ur-5hQ">
+                                <rect key="frame" x="189.5" y="821.5" width="35" height="20.5"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="k2s-sA-ecY">
+                                <rect key="frame" x="57" y="393" width="300" height="120"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1tJ-Us-pLO">
+                                        <rect key="frame" x="0.0" y="0.0" width="300" height="50"/>
+                                        <color key="backgroundColor" systemColor="labelColor"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="50" id="p9e-Y2-eJX"/>
+                                            <constraint firstAttribute="width" constant="300" id="ueD-G6-fg0"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
+                                        <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                        <state key="normal" title="Remove VC">
+                                            <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="btnRemoveVC:" destination="idI-fC-3kr" eventType="touchUpInside" id="i6P-28-gml"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="umM-3s-suv">
+                                        <rect key="frame" x="0.0" y="70" width="300" height="50"/>
+                                        <color key="backgroundColor" systemColor="labelColor"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="300" id="ZAG-AO-C3A"/>
+                                            <constraint firstAttribute="height" constant="50" id="bbd-VF-rKS"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
+                                        <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                        <state key="normal" title="Insert VC">
+                                            <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="btnInsertVC:" destination="idI-fC-3kr" eventType="touchUpInside" id="asW-27-GD4"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                            </stackView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="SBk-F7-zzN"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="SBk-F7-zzN" firstAttribute="bottom" secondItem="UVs-Ur-5hQ" secondAttribute="bottom" constant="20" id="2wb-kH-Wb0"/>
+                            <constraint firstItem="k2s-sA-ecY" firstAttribute="centerX" secondItem="SBk-F7-zzN" secondAttribute="centerX" id="WVa-Zj-m3U"/>
+                            <constraint firstItem="k2s-sA-ecY" firstAttribute="centerY" secondItem="SBk-F7-zzN" secondAttribute="centerY" id="fba-6Y-YA7"/>
+                            <constraint firstItem="UVs-Ur-5hQ" firstAttribute="centerX" secondItem="SBk-F7-zzN" secondAttribute="centerX" id="hL8-Te-mWL"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="ezB-GW-yiv"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="GjN-0k-grR" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="4026" y="138"/>
+        </scene>
+    </scenes>
+    <resources>
+        <systemColor name="labelColor">
+            <color white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>

@@ -1,0 +1,195 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="20037" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="20020"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Using PopVC3-->
+        <scene sceneID="s0d-6b-0kx">
+            <objects>
+                <viewController id="Y6W-OH-hqX" customClass="UsingPopVC3" customModule="UINavigationController_2022_09_19" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="5EZ-qb-Rvc">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="FU3-1k-ZUW">
+                                <rect key="frame" x="57" y="348" width="300" height="190"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jGY-OK-czB">
+                                        <rect key="frame" x="0.0" y="0.0" width="300" height="50"/>
+                                        <color key="backgroundColor" systemColor="labelColor"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="300" id="8CD-0s-7pj"/>
+                                            <constraint firstAttribute="height" constant="50" id="vVR-P0-zyd"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
+                                        <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                        <state key="normal" title="PopViewController">
+                                            <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="btnPopVCClick:" destination="Y6W-OH-hqX" eventType="touchUpInside" id="Q02-2I-Vb1"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="pLP-qs-alq">
+                                        <rect key="frame" x="0.0" y="70" width="300" height="50"/>
+                                        <color key="backgroundColor" systemColor="labelColor"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="300" id="UVU-ma-VSm"/>
+                                            <constraint firstAttribute="height" constant="50" id="uWs-pT-4jR"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
+                                        <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                        <state key="normal" title="PopToViewController (VC1)">
+                                            <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="btnPopToVCClick:" destination="Y6W-OH-hqX" eventType="touchUpInside" id="dU0-LO-nA5"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="u3x-Oa-iFn">
+                                        <rect key="frame" x="0.0" y="140" width="300" height="50"/>
+                                        <color key="backgroundColor" systemColor="labelColor"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="300" id="5Yv-Cf-tpv"/>
+                                            <constraint firstAttribute="height" constant="50" id="rx0-bM-9bw"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
+                                        <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                        <state key="normal" title="PopToRootViewController">
+                                            <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="btnPopToRootVCClick:" destination="Y6W-OH-hqX" eventType="touchUpInside" id="O5c-60-eIv"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                            </stackView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="VC3" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hUm-PY-gvj">
+                                <rect key="frame" x="189.5" y="801.5" width="35" height="20.5"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="vDu-zF-Fre"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="FU3-1k-ZUW" firstAttribute="centerY" secondItem="vDu-zF-Fre" secondAttribute="centerY" id="JIs-24-3ui"/>
+                            <constraint firstItem="hUm-PY-gvj" firstAttribute="centerX" secondItem="vDu-zF-Fre" secondAttribute="centerX" id="Xc4-FL-Yfv"/>
+                            <constraint firstItem="FU3-1k-ZUW" firstAttribute="centerX" secondItem="vDu-zF-Fre" secondAttribute="centerX" id="r70-Ii-Q4a"/>
+                            <constraint firstItem="vDu-zF-Fre" firstAttribute="bottom" secondItem="hUm-PY-gvj" secondAttribute="bottom" constant="20" id="tGG-0S-ziW"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="Bib-tT-UHa"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Ief-a0-LHa" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3355.072463768116" y="137.94642857142856"/>
+        </scene>
+        <!--Using PopVC-->
+        <scene sceneID="xUd-k8-YR7">
+            <objects>
+                <viewController storyboardIdentifier="UsingPopVC" id="Ppb-Lc-3N1" customClass="UsingPopVC" customModule="UINavigationController_2022_09_19" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="fk5-13-HR0">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qFh-Oo-qi4">
+                                <rect key="frame" x="57" y="428" width="300" height="50"/>
+                                <color key="backgroundColor" systemColor="labelColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="7mh-tc-pgj"/>
+                                    <constraint firstAttribute="width" constant="300" id="b9l-HK-ZJ0"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
+                                <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                <state key="normal" title="GO TO VC2">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <connections>
+                                    <segue destination="rsI-6t-u1d" kind="push" id="GRc-YX-9bG"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="VC1" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3nB-gL-h5F">
+                                <rect key="frame" x="191" y="821" width="32" height="21"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="gw3-nV-adX"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="qFh-Oo-qi4" firstAttribute="centerY" secondItem="gw3-nV-adX" secondAttribute="centerY" id="0Bf-II-YgU"/>
+                            <constraint firstItem="gw3-nV-adX" firstAttribute="bottom" secondItem="3nB-gL-h5F" secondAttribute="bottom" constant="20" id="Fgx-pM-hFf"/>
+                            <constraint firstItem="3nB-gL-h5F" firstAttribute="centerX" secondItem="gw3-nV-adX" secondAttribute="centerX" id="IJZ-3s-3gd"/>
+                            <constraint firstItem="qFh-Oo-qi4" firstAttribute="centerX" secondItem="gw3-nV-adX" secondAttribute="centerX" id="Ycl-Qs-EaF"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="4nF-DZ-OnB"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Uuu-BI-Y79" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1800.0000000000002" y="137.94642857142856"/>
+        </scene>
+        <!--Using PopVC2-->
+        <scene sceneID="Iaw-m5-6xC">
+            <objects>
+                <viewController id="rsI-6t-u1d" customClass="UsingPopVC2" customModule="UINavigationController_2022_09_19" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="WTH-vx-3It">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="yIV-E3-FkW">
+                                <rect key="frame" x="57" y="418" width="300" height="50"/>
+                                <color key="backgroundColor" systemColor="labelColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="300" id="MJO-Mo-f3q"/>
+                                    <constraint firstAttribute="height" constant="50" id="hGU-LB-SYT"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
+                                <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                <state key="normal" title="GO TO VC3">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <connections>
+                                    <segue destination="Y6W-OH-hqX" kind="push" id="LsF-jc-8sF"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="VC2" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wQQ-Eo-M2Y">
+                                <rect key="frame" x="189.5" y="801" width="35" height="21"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="wMb-IR-42w"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="wQQ-Eo-M2Y" firstAttribute="centerX" secondItem="wMb-IR-42w" secondAttribute="centerX" id="20v-Eg-zNb"/>
+                            <constraint firstItem="yIV-E3-FkW" firstAttribute="centerX" secondItem="wMb-IR-42w" secondAttribute="centerX" id="AGQ-v5-sCE"/>
+                            <constraint firstItem="yIV-E3-FkW" firstAttribute="centerY" secondItem="wMb-IR-42w" secondAttribute="centerY" id="U0E-XQ-Hge"/>
+                            <constraint firstItem="wMb-IR-42w" firstAttribute="bottom" secondItem="wQQ-Eo-M2Y" secondAttribute="bottom" constant="20" id="zrP-cy-jtV"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="haE-xZ-cz1"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="AHH-4j-WWy" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2576.811594202899" y="137.94642857142856"/>
+        </scene>
+    </scenes>
+    <resources>
+        <systemColor name="labelColor">
+            <color white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
